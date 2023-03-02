@@ -18,5 +18,5 @@ function startIncrement(el) {
     if (el.textContent == goal) {
       clearInterval(count);
     }
-  }, 3000 / goal);
+  }, 3500 / goal);
 }
