@@ -943,6 +943,11 @@ ul {
   background-color: var(--main-color);
   top: 0;
   left: 0;
+  transition: width 2s linear;
+  -webkit-transition: width 2s linear;
+  -moz-transition: width 2s linear;
+  -ms-transition: width 2s linear;
+  -o-transition: width 2s linear;
 }
 /* End Skills */
 
