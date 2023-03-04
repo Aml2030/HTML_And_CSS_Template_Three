@@ -1,4 +1,17 @@
-// Increase Numbers On Scrolling
+// Increasing the width while scrolling SKILLS
+
+let section = document.querySelector(".our-skills");
+let spans = document.querySelectorAll(".the-progress span");
+
+window.onscroll = function () {
+  if (window.scrollY >= section.offsetTop - 220) {
+    spans.forEach((s) => {
+      s.style.width = s.dataset.width;
+    });
+  }
+};
+
+// Increase Numbers On Scrolling STATS
 
 let section = document.querySelector(".stats");
 let numsArr = document.querySelectorAll(".number");
@@ -24,7 +37,7 @@ function startIncrement(el) {
 }
 
 
-// Create Countdown Timer
+// Create Countdown Timer EVENT
 
 let countDownDate = new Date("Dec 31, 2023 23:59:59").getTime();
 
